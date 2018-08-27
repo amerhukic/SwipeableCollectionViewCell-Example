@@ -10,7 +10,7 @@
 </p>
 
 This repo contains an example iOS project that demonstrates how to subclass `SwipeableCollectionViewCell` and implement the swipe to delete feature. 
-[A detailed explanation about the implementation is available as a blog-post on my website](https://amerhukic.com/2018-08-27/swipeable-collection-view-cell).
+[A detailed explanation about the implementation is available as a blog-post on my website](https://www.amerhukic.com/swipeable-collection-view-cell).
 
 
 ## License
