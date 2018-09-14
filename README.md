@@ -15,7 +15,7 @@ This repo contains an example iOS project that demonstrates how to subclass `Swi
 
 ## License
 
-Blog-SwipeableCollectionViewCell is licensed under the MIT license. Check the [LICENSE](LICENSE) file for details.
+SwipeableCollectionViewCell-Example is licensed under the MIT license. Check the [LICENSE](LICENSE) file for details.
 
 ## Author
 
