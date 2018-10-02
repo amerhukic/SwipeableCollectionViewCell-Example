@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://www.amerhukic.com/assets/2018-08-27/swipeable-cell-delete.gif" width="484" max-width="80%" alt="Swipe to delete" />
+    <img src="Demo.gif" width="484" max-width="80%" alt="Swipe to delete" />
 </p>
 
 <p align="center">
