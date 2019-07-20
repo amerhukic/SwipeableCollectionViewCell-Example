@@ -67,4 +67,9 @@ extension ItemsViewController: SwipeableCollectionViewCellDelegate {
             self.collectionView.deleteItems(at: [indexPath])
         })
     }
+    
+    func visibleContainerViewTapped(inCell cell: UICollectionViewCell) {
+        guard let indexPath = collectionView.indexPath(for: cell) else { return }
+        print("Tapped item at index path: \(indexPath)")
+    }
 }

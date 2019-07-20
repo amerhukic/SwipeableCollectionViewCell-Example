@@ -9,6 +9,7 @@
 import UIKit
 
 protocol SwipeableCollectionViewCellDelegate: class {
+    func visibleContainerViewTapped(inCell cell: UICollectionViewCell)
     func hiddenContainerViewTapped(inCell cell: UICollectionViewCell)
 }
 
@@ -57,8 +58,16 @@ class SwipeableCollectionViewCell: UICollectionViewCell {
     }
     
     private func setupGestureRecognizer() {
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hiddenContainerViewTapped))
-        hiddenContainerView.addGestureRecognizer(tapGestureRecognizer)
+        let hiddenContainerTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hiddenContainerViewTapped))
+        hiddenContainerView.addGestureRecognizer(hiddenContainerTapGestureRecognizer)
+        
+        let visibleContainerTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(visibleContainerViewTapped))
+        visibleContainerView.addGestureRecognizer(visibleContainerTapGestureRecognizer)
+        
+    }
+    
+    @objc private func visibleContainerViewTapped() {
+        delegate?.visibleContainerViewTapped(inCell: self)
     }
     
     @objc private func hiddenContainerViewTapped() {
